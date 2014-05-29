@@ -11,8 +11,6 @@ import os
 pdf_dir_default = '/home/xinxing/Documents/paper/pdf/'
 bibtex_path_default = '/home/xinxing/Documents/paper/paperlib.bib'
 
-
-
 class paper:
     def __init__(self, journal, volume, page):
         self.journal = journal
@@ -162,11 +160,31 @@ class science(paper):
         temp_str1 = re.search('gca=[^\"]*\">BibTeX', citation_html).group()[:-8]
         self.bibtex_url = self.journal_url + '/citmgr?type=bibtex&' + temp_str1
 
+class arXiv(paper):
+    def __init__(self, journal, volume, page):
+        paper.__init__(self, journal, volume, page)
+        self.search_url = 'http://arxiv.org'
+        self.journal_url = 'http://arxiv.org'
+
+    def get_abs_url(self, query_args):
+        self.abs_url = self.search_url + '/abs/' + self.volume + '.' + self.page
+
+    def get_pdf_url(self, abs_html):
+        temp_str1 = re.search('href=\"[^\"]*\" accesskey=\"f\">PDF', abs_html).group()[6:-19]
+        self.pdf_url = self.journal_url + temp_str1
+
+    def get_bibtex_url(self, abs_html):
+        temp_str1 = re.search('href=\"[^\"]*\">NASA ADS', abs_html).group()[6:-10]
+        self.bibtex_url = temp_str1
+        citation_html = urllib2.urlopen(self.bibtex_url).read()
+        temp_str1 = re.search('href=\"[^\"]*\">Bibtex', citation_html).group()[6:-8]
+        self.bibtex_url = temp_str1
+
 if __name__ == '__main__':
     download_flag = 1
     if len(sys.argv) == 2:
         if sys.argv[1] == '-h':
-            print 'Article automatical download tool. Download both pdf file and bibtex. \nExample: dl JOURNAL VOLUME PAGE \nwhere JOURNAL could be:\n\tPRL\n\tPRA-E\n\tRMP\n\tnature\n\tnphys (nature physics)\n\tscience\n\t(to be continue)\n'
+            print 'Article automatical download tool. Download both pdf file and bibtex. \nExample: dl JOURNAL VOLUME PAGE \nwhere JOURNAL could be:\n\tPRL\n\tPRA-E\n\tRMP\n\tnature\n\tnphys (nature physics)\n\tscience\n\tarXiv\n\t(to be continue)\n'
     elif len(sys.argv) == 4:
         journal = sys.argv[1]
         volume = sys.argv[2]
@@ -178,7 +196,8 @@ if __name__ == '__main__':
             newpaper = PhysicalReview(journal, volume, page)
         elif (journal == 'science'):
             newpaper = science(journal, volume, page)
-         
+        elif (journal == 'arxiv'):
+            newpaper = arXiv(journal, volume, page)
         else:
             print 'Invalid journal name!'
             download_flag = 0
@@ -186,6 +205,6 @@ if __name__ == '__main__':
         if download_flag == 1:
             newpaper.download()
 
-#    newpaper = science('science','275' , '637')
+#    newpaper = arXiv('arXiv','1004' , '5398')
 #    newpaper.download()
 

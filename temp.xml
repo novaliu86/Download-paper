@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Xu2014">
+    <titleInfo>
+        <title>Spin and pseudospins in layered transition metal dichalcogenides</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Xiaodong</namePart>
+        <namePart type="family">Xu</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Wang</namePart>
+        <namePart type="family">Yao</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Di</namePart>
+        <namePart type="family">Xiao</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Tony</namePart>
+        <namePart type="given">F</namePart>
+        <namePart type="family">Heinz</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2014-05</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Nat Phys</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+            <publisher>Nature Publishing Group</publisher>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+        <genre>academic journal</genre>
+        <identifier type="issn">1745-2473</identifier>
+    </relatedItem>
+    <abstract>The recent emergence of two-dimensional layered materials [mdash] in particular the transition metal dichalcogenides [mdash] provides a new laboratory for exploring the internal quantum degrees of freedom of electrons and their potential for new electronics. These degrees of freedom are the real electron spin, the layer pseudospin, and the valley pseudospin. New methods for the quantum control of the spin and these pseudospins arise from the existence of Berry phase-related physical properties and strong spin-orbit coupling. The former leads to the versatile control of the valley pseudospin, whereas the latter gives rise to an interplay between the spin and the pseudospins. Here, we provide a brief review of both theoretical and experimental advances in this field.</abstract>
+    <note>Review</note>
+    <identifier type="citekey">Xu2014</identifier>
+    <location>
+        <url>http://dx.doi.org/10.1038/nphys2942</url>
+    </location>
+    <part>
+        <date>2014-05</date>
+        <detail type="volume"><number>10</number></detail>
+        <detail type="issue"><number>5</number></detail>
+        <extent unit="page">
+            <start>343</start>
+            <end>350</end>
+        </extent>
+    </part>
+</mods>
+</modsCollection>

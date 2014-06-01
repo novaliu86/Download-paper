@@ -1,67 +1,101 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
-<mods ID="Xu2014">
+<mods ID="Winkler2006">
     <titleInfo>
-        <title>Spin and pseudospins in layered transition metal dichalcogenides</title>
+        <title>Repulsively bound atom pairs in an optical lattice</title>
     </titleInfo>
     <name type="personal">
-        <namePart type="given">Xiaodong</namePart>
-        <namePart type="family">Xu</namePart>
+        <namePart type="given">K</namePart>
+        <namePart type="family">Winkler</namePart>
         <role>
             <roleTerm authority="marcrelator" type="text">author</roleTerm>
         </role>
     </name>
     <name type="personal">
-        <namePart type="given">Wang</namePart>
-        <namePart type="family">Yao</namePart>
+        <namePart type="given">G</namePart>
+        <namePart type="family">Thalhammer</namePart>
         <role>
             <roleTerm authority="marcrelator" type="text">author</roleTerm>
         </role>
     </name>
     <name type="personal">
-        <namePart type="given">Di</namePart>
-        <namePart type="family">Xiao</namePart>
-        <role>
-            <roleTerm authority="marcrelator" type="text">author</roleTerm>
-        </role>
-    </name>
-    <name type="personal">
-        <namePart type="given">Tony</namePart>
         <namePart type="given">F</namePart>
-        <namePart type="family">Heinz</namePart>
+        <namePart type="family">Lang</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">R</namePart>
+        <namePart type="family">Grimm</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">J</namePart>
+        <namePart type="family">Hecker Denschlag</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">A</namePart>
+        <namePart type="given">J</namePart>
+        <namePart type="family">Daley</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">A</namePart>
+        <namePart type="family">Kantian</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">H</namePart>
+        <namePart type="given">P</namePart>
+        <namePart type="family">BĂźchler</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">P</namePart>
+        <namePart type="family">Zoller</namePart>
         <role>
             <roleTerm authority="marcrelator" type="text">author</roleTerm>
         </role>
     </name>
     <originInfo>
-        <dateIssued>2014-05</dateIssued>
+        <dateIssued>2006-06-15</dateIssued>
     </originInfo>
     <typeOfResource>text</typeOfResource>
     <relatedItem type="host">
         <titleInfo>
-            <title>Nat Phys</title>
+            <title>Nature</title>
         </titleInfo>
         <originInfo>
             <issuance>continuing</issuance>
-            <publisher>Nature Publishing Group</publisher>
         </originInfo>
         <genre authority="marcgt">periodical</genre>
         <genre>academic journal</genre>
-        <identifier type="issn">1745-2473</identifier>
+        <identifier type="issn">0028-0836</identifier>
     </relatedItem>
-    <abstract>The recent emergence of two-dimensional layered materials [mdash] in particular the transition metal dichalcogenides [mdash] provides a new laboratory for exploring the internal quantum degrees of freedom of electrons and their potential for new electronics. These degrees of freedom are the real electron spin, the layer pseudospin, and the valley pseudospin. New methods for the quantum control of the spin and these pseudospins arise from the existence of Berry phase-related physical properties and strong spin-orbit coupling. The former leads to the versatile control of the valley pseudospin, whereas the latter gives rise to an interplay between the spin and the pseudospins. Here, we provide a brief review of both theoretical and experimental advances in this field.</abstract>
-    <note>Review</note>
-    <identifier type="citekey">Xu2014</identifier>
+    <identifier type="citekey">Winkler2006</identifier>
+    <identifier type="doi">10.1038/nature04918</identifier>
     <location>
-        <url>http://dx.doi.org/10.1038/nphys2942</url>
+        <url>http://dx.doi.org/10.1038/nature04918</url>
     </location>
     <part>
-        <date>2014-05</date>
-        <detail type="volume"><number>10</number></detail>
-        <detail type="issue"><number>5</number></detail>
+        <date>2006-06-15</date>
+        <detail type="volume"><number>441</number></detail>
+        <detail type="issue"><number>7095</number></detail>
         <extent unit="page">
-            <start>343</start>
-            <end>350</end>
+            <start>853</start>
+            <end>856</end>
         </extent>
     </part>
 </mods>

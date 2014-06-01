@@ -1,20 +1,25 @@
 
+Provider: Nature Publishing Group
+Content: application/x-research-info-systems
 TY  - JOUR
-AU  - Xu, Xiaodong
-AU  - Yao, Wang
-AU  - Xiao, Di
-AU  - Heinz, Tony F.
-TI  - Spin and pseudospins in layered transition metal dichalcogenides
-JA  - Nat Phys
-PY  - 2014/05//print
-VL  - 10
-IS  - 5
-SP  - 343
-EP  - 350
-PB  - Nature Publishing Group
-SN  - 1745-2473
-UR  - http://dx.doi.org/10.1038/nphys2942
-L3  - 10.1038/nphys2942
-M3  - Review
-AB  - The recent emergence of two-dimensional layered materials [mdash] in particular the transition metal dichalcogenides [mdash] provides a new laboratory for exploring the internal quantum degrees of freedom of electrons and their potential for new electronics. These degrees of freedom are the real electron spin, the layer pseudospin, and the valley pseudospin. New methods for the quantum control of the spin and these pseudospins arise from the existence of Berry phase-related physical properties and strong spin-orbit coupling. The former leads to the versatile control of the valley pseudospin, whereas the latter gives rise to an interplay between the spin and the pseudospins. Here, we provide a brief review of both theoretical and experimental advances in this field.
+AU  - Winkler, K.
+AU  - Thalhammer, G.
+AU  - Lang, F.
+AU  - Grimm, R.
+AU  - Hecker Denschlag, J.
+AU  - Daley, A. J.
+AU  - Kantian, A.
+AU  - Büchler, H. P.
+AU  - Zoller, P.
+TI  - Repulsively bound atom pairs in an optical lattice
+JA  - Nature
+PY  - 2006/06/15/print
+VL  - 441
+IS  - 7095
+SP  - 853
+EP  - 856
+SN  - 0028-0836
+UR  - http://dx.doi.org/10.1038/nature04918
+M3  - 10.1038/nature04918
+N1  - 10.1038/nature04918
 ER  - 

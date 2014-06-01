@@ -76,14 +76,25 @@ class paper:
         f.write(bibtex_data)
         f.close()
 
+    def check_exist(self):
+        self.get_pdf_path()
+        f = open(bibtex_path_default, 'r')
+        bibtex_data = f.read()
+        result = re.search(self.pdf_name, bibtex_data)
+        if result == None:
+            print 'Paper not exist.'
+            return 0
+        else:
+            print 'Paper already downloaded.'
+            return 1
+
     def download(self):
-        print 'Searching for the abstract page...'
+        print 'Begin downloading.\nSearching for the abstract page...'
         self.set_query_args()
         self.get_abs_url(self.query_args)
         self.get_abs_html(self.abs_url)
         print 'Downloading pdf file...'
         self.get_pdf_url(self.abs_html)
-        self.get_pdf_path()
         self.download_pdf(self.pdf_url, self.pdf_path)
         print 'Downloading bibtex...'
         self.get_bibtex_url(self.abs_html)
@@ -91,6 +102,11 @@ class paper:
         self.insert_pdf_link(self.bibtex_data, self.pdf_name)
         self.save_bibtex_data(self.bibtex_data)
         print 'Done.'
+    
+    def open_pdf(self):
+        print 'Opening pdf file...'
+        os.system('evince ' + self.pdf_path)
+        print 'Pdf file closed.'
 
 
 class PhysicalReview(paper):
@@ -203,8 +219,10 @@ if __name__ == '__main__':
             download_flag = 0
  
         if download_flag == 1:
-            newpaper.download()
-
+            file_exist = newpaper.check_exist()
+            if file_exist == 0:
+                newpaper.download()
+            newpaper.open_pdf()
 #    newpaper = arXiv('arXiv','1004' , '5398')
 #    newpaper.download()
 
